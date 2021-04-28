@@ -33,7 +33,7 @@ export default function EmployeeForm(props) {
         if ('address' in fieldValues)
             temp.address = fieldValues.address ? "" : "This field is required."
         if ('email' in fieldValues)
-            temp.email = (/$^|.+@.+..+/).test(fieldValues.email) ? "" : "Email is not valid.": "This field is required."
+            temp.email = (/$^|.+@.+..+/).test(fieldValues.email) ? "" : "Email is not valid." : "This field is required."
         if ('mobile' in fieldValues)
             temp.mobile = fieldValues.mobile.length > 9 ? "" : "Minimum 10 numbers required."
         if ('departmentId' in fieldValues)
